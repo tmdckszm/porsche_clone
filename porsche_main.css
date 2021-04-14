@@ -1,0 +1,174 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+}
+
+header{
+    height: 118px;
+    border-bottom: 1px solid #c9cacb;
+    position: relative;
+    
+}
+
+#main_logo{
+    height: 133px;
+    width: 133px;
+    border-bottom: 1px solid #c9cacb; 
+    border-left: 1px solid #c9cacb; 
+    border-right: 1px solid #c9cacb;
+    margin: 0 0 0 95px;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+}
+
+#main_logo>a>img{
+    width: 120px;
+    height: 72px;
+    margin: 25px 0px 0 5px;
+}
+
+
+#car_list>ul{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 13%;
+
+}
+
+#car_list>ul>li{
+    margin: 0 0 0 10px;
+    height: 90px;
+}
+
+#car_list>ul>li>div{
+    text-align: center;
+    font-family: inherit;
+    margin: -12px 0 0 0;
+    font-size: 16px;
+}
+
+.car_menu{
+    display: inline-block;
+}
+
+.car_menu:hover{
+    border-bottom: 2px solid #d5001c;;
+}
+
+#shop{
+    position: absolute;
+    top: 35px;
+    left: 53%;
+}
+
+#shop>ul>li:hover{
+    color: #d5001c;
+    border-bottom: 2px solid #d5001c;
+}
+
+#shop>ul{
+    display: inline-block;
+}
+
+#shop>ul>li{
+    display: inline-block;
+    margin: 0 5px 0 0;
+    height: 65px;
+}
+
+#shop>ul>li>div{
+    font-size: 16px;
+}
+
+#menu_line{
+    background-color: #c9cacb;
+    width: 1px;
+    height: 38px;
+    position: absolute;
+    left: 70%;
+    top: 40px;
+}
+
+#center_search{
+    position: absolute;
+    top: 26%;
+    right: 8%;
+}
+
+#map_icon{
+    width: 1.5em;
+    height: 1.5em;
+    display: inline-block;
+    vertical-align: sub;
+}
+
+#map_search{
+    display: inline-block;
+    color: black;
+}
+
+#center_search:hover svg{
+    fill :#d5001c
+}
+
+#center_search:hover #map_search{
+    color: #d5001c;
+}
+
+#info1{
+    background-color: white;
+    z-index: 1;
+    margin: -15px;
+    height: 425px;
+    position: relative;
+}
+
+#info_1{
+    position: absolute;
+    top: 17%;
+    left: 31%;
+    border-top: 1px solid #c9cacb;
+    border-bottom: 1px solid #c9cacb;
+}
+
+.info_detail{
+    display: inline-block;
+}
+
+.info_detail2{
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: super;
+    color: black;
+}
+
+.info_margin{
+    margin: 0 0 0 22px;
+    text-decoration: none;
+}
+
+#info_img{
+    position: absolute;
+    top: 35%;
+    left: 42%;
+}
+
+#model_name{
+    text-align: center;
+    margin: 0 0 0 -18px;
+}
+
+#info_last{
+    position: absolute;
+    top: 86%;
+    left: 42%;
+    border-bottom: 1px solid #c9cacb;
+    border-top: 1px solid #c9cacb;
+}
+
+#info_last>a{
+    display: inline-block;
+}
