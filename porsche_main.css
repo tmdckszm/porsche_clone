@@ -2,13 +2,14 @@ body{
     margin: 0;
     padding: 0;
     font-family: inherit;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
 }
 
 header{
     height: 118px;
     border-bottom: 1px solid #c9cacb;
     position: relative;
-    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
 }
 
 #main_logo{
@@ -124,9 +125,8 @@ header{
     height: 425px;
     position: relative;
     margin: -15px 0 0 0px;
-    display: none;
     transition: all 0.35s;
-    top : -500px;
+    display: none;
 }
 
 .info_menu_2{
@@ -170,6 +170,92 @@ header{
     position: relative;
     margin: -15px 0 0 0px;
     display: none;
+}
+
+.shop_menu{
+    background-color: white;
+    height: 253px;
+    margin: -15px 0 0 0;
+    position: relative;
+    display: none;
+}
+
+.shop_menu_detail{
+    background-color: white;
+    width: 1620px;
+    height: 462px;
+    margin: -15px 0 0 0;
+    position: relative;
+    display: none;
+}
+
+.shop_menu_detail>li{
+    width: 267px;
+    height: 412px;
+    display: inline-block;
+    list-style: none;
+    margin: 55px -264px 0 317px;
+}
+
+.shop_menu_detail>li>ul{
+    position: absolute;
+    list-style: none;
+}
+
+#shop_menu_detail_title{
+    font-size: 22px;
+    border-bottom: 1px solid black;
+    width: 267px;
+    padding: 0px 0px 5px 5px;
+}
+
+.shop_menu_detail_info{
+    margin: 25px 70px 0 0;
+}
+
+.shop_menu_detail_info>a:hover{
+    color: #d5001c;
+}
+
+.shop_menu_detail_info>a{
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.shop_menu>li{
+    position: absolute;
+}
+
+#shop_main_title{
+    top: 25%;
+    font-size: 22px;
+    list-style: none;
+    left: 43%;
+    border-bottom: 1px solid black;
+    width: 267px;
+    padding :0px 0px 5px 15px;
+}
+
+#shop_main_info{
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+    list-style: none;
+    top: 50%;
+    left: 42%;
+}
+
+.shop_main_info_detail{
+    list-style: none;
+    margin: 5px 0px 0px 0px;
+}
+
+.shop_main_info_detail>a:hover{
+    color: #d5001c;
+}
+
+.shop_main_info_detail>a{
+    text-decoration: none;
+    color: black;
 }
 
 .info_menu_3>li{
@@ -299,4 +385,166 @@ header{
 
 #second_2>div:hover .info_text_1{
     color: #d5001c;
+}
+
+#main_1{
+    height: 625px;
+    border: 1px solid red;
+    position: relative;
+    overflow: hidden;
+}
+
+#main_2{
+    height: 985px;
+    border: 1px solid blue;
+}
+
+#main_3{
+    height: 523px;
+    border: 1px solid orange;
+}
+
+#main_4{
+    height: 776px;
+    border: 1px solid yellow;
+}
+
+#main_5{
+    height: 470px;
+    border: 1px solid green;
+}
+
+#main_6{
+    height: 482px;
+    border: 1px solid purple;
+}
+
+#main_7{
+    height: 482px;
+    border: 1px solid pink;
+}
+
+#main_1>ul{
+    width: 7000px;
+    margin: 0 0 0 -40px;
+}
+
+#main_1>ul>li{
+    display: inline-block;
+}
+
+.img_width>img{
+    width: 1676px;
+    height: 625px;
+}
+
+#img_text{
+    position: absolute;
+    color: white;
+    top: 62%;
+    left: 5%;
+}
+
+#content_tag::before{
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 35px;
+    color: #d5001c;
+    margin: 0 10px 0 0;
+}
+
+#content_tag{
+    font-size: 52px;
+    font-weight: 900;
+}
+
+#img_text_2{
+    font-size: 28px;
+    margin: -45px 0 0 35px;
+    font-weight: 900;
+}
+
+#img_text2{
+    position: absolute;
+    color: white;
+    top: 67%;
+    left: 170%;
+}
+
+
+#content_tag2::before{
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 35px;
+    color: #d5001c;
+    margin: 0 10px 0 0;
+}
+
+#content_tag2{
+    font-size: 52px;
+    font-weight: 900;
+}
+
+#img_text_3{
+    font-size: 28px;
+    margin: -45px 0 0 35px;
+    font-weight: 900;
+}
+
+#img_text3{
+    position: absolute;
+    color: white;
+    left: 206%;
+    top: 67%;
+}
+
+
+#content_tag3::before{
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 35px;
+    color: #d5001c;
+    margin: 0 10px 0 0;
+}
+
+#content_tag3{
+    font-size: 52px;
+    font-weight: 900;
+}
+
+#img_text_4{
+    font-size: 28px;
+    margin: -45px 0 0 35px;
+    font-weight: 900;
+}
+
+#img_text4{
+    position: absolute;
+    color: white;
+    left: 368%;
+    top: 67%;
+}
+
+
+#content_tag4::before{
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 35px;
+    color: #d5001c;
+    margin: 0 10px 0 0;
+}
+
+#content_tag4{
+    font-size: 52px;
+    font-weight: 900;
+}
+
+#img_text_5{
+    font-size: 28px;
+    margin: -45px 0 0 35px;
+    font-weight: 900;
 }
