@@ -127,6 +127,7 @@ header{
     margin: -15px 0 0 0px;
     transition: all 0.35s;
     display: none;
+    z-index: 1;
 }
 
 .info_menu_2{
@@ -136,6 +137,7 @@ header{
     position: relative;
     margin: -15px 0 0 0px;
     display: none;
+    z-index: 1;
 }
 
 .info_menu_3{
@@ -145,6 +147,7 @@ header{
     position: relative;
     margin: -15px 0 0 0px;
     display: none;
+    z-index: 1;
 }
 
 .info_menu_4{
@@ -154,6 +157,7 @@ header{
     position: relative;
     margin: -15px 0 0 0px;
     display: none;
+    z-index: 1;
 }
 .info_menu_5{
     background-color: white;
@@ -162,6 +166,7 @@ header{
     position: relative;
     margin: -15px 0 0 0px;
     display: none;
+    z-index: 1;
 }
 .info_menu_6{
     background-color: white;
@@ -170,6 +175,7 @@ header{
     position: relative;
     margin: -15px 0 0 0px;
     display: none;
+    z-index: 1;
 }
 
 .shop_menu{
@@ -178,15 +184,17 @@ header{
     margin: -15px 0 0 0;
     position: relative;
     display: none;
+    z-index: 1;
 }
 
 .shop_menu_detail{
     background-color: white;
-    width: 1620px;
-    height: 462px;
+    width: 1640px;
+    height: 543px;
     margin: -15px 0 0 0;
     position: relative;
     display: none;
+    z-index: 1;
 }
 
 .shop_menu_detail>li{
@@ -425,17 +433,20 @@ header{
 }
 
 #main_1>ul{
-    width: 7000px;
+    width: 6706px;
     margin: 0 0 0 -40px;
+    position: absolute;
+    transition: all 0.35s;
 }
 
 #main_1>ul>li{
     display: inline-block;
+    position: relative;
 }
 
 .img_width>img{
     width: 1676px;
-    height: 625px;
+    height: 624px;
 }
 
 #img_text{
@@ -468,10 +479,25 @@ header{
 #img_text2{
     position: absolute;
     color: white;
-    top: 67%;
-    left: 170%;
+    top: 62%;
+    left: 70%;
 }
 
+#img_text:hover{
+    color: #d5001c;
+}
+
+#img_text2:hover{
+    color: #d5001c;
+}
+
+#img_text3:hover{
+    color: #d5001c;
+}
+
+#img_text4:hover{
+    color: #d5001c;
+}
 
 #content_tag2::before{
     content: "\f054";
@@ -496,8 +522,8 @@ header{
 #img_text3{
     position: absolute;
     color: white;
-    left: 206%;
-    top: 67%;
+    left: 5%;
+    top: 62%;
 }
 
 
@@ -524,8 +550,8 @@ header{
 #img_text4{
     position: absolute;
     color: white;
-    left: 368%;
-    top: 67%;
+    left: 70%;
+    top: 62%;
 }
 
 
@@ -547,4 +573,103 @@ header{
     font-size: 28px;
     margin: -45px 0 0 35px;
     font-weight: 900;
+}
+
+#button_1{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    display: none;
+}
+
+#button_2{
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    display: none;
+}
+
+#button_1:hover{
+    background-color: #d5001c;
+}
+
+#button_1:hover #button_1_content:before{
+    color: white;
+}
+
+#button_2:hover{
+    background-color: #d5001c;
+}
+
+#button_2:hover #button_2_content:before{
+    color: white;
+}
+
+#button_1_content::before{
+    content: "\f053";
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+    margin: 0px 0px 0 16px;
+}
+
+#button_2_content::before{
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+    margin: 0px 0px 0 18px;
+}
+
+#checkbox_main{
+    position: absolute;
+    bottom: 5%;
+    left: 47%;
+}
+
+#checkbox_main>div{
+    width: 24px;
+    height: 12px;
+    display: inline-block;
+}
+
+
+#redbutton1{
+    background-color: red;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+#redbutton2{
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+#redbutton3{
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+}
+
+#redbutton4{
+    background-color: white;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
 }
