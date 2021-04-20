@@ -16,6 +16,97 @@ var info6= document.querySelector(".info_menu_6");
 var shopmenu = document.querySelector(".shop_menu");
 var shopmd = document.querySelector(".shop_menu_detail");
 
+var main1 = document.querySelector("#main_1");
+var button1 = document.querySelector("#button_1");
+var button2 = document.querySelector("#button_2");
+var slide1 = document.querySelector("#slide");
+var rebutton1 =document.querySelector("#redbutton1");
+var rebutton2 =document.querySelector("#redbutton2");
+var rebutton3 =document.querySelector("#redbutton3");
+var rebutton4 =document.querySelector("#redbutton4");
+var num = 0;
+
+function slidechange(num){
+    slide1.style.left = num * -1675+'px';
+}
+
+function redright(r){
+    r.style.backgroundColor = "red";
+}
+function whiteright(w){
+    w.style.backgroundColor = "white";
+}
+
+button2.addEventListener("click",function(){
+    if(num<3){
+        num++;
+        console.log(num);
+        slidechange(num);
+        if(num ==1)
+        {
+            redright(redbutton2);
+            whiteright(redbutton1);
+            whiteright(redbutton3);
+            whiteright(redbutton4);
+        }
+        if(num ==2)
+        {
+            redright(redbutton3);
+            whiteright(redbutton1);
+            whiteright(redbutton2);
+            whiteright(redbutton4);
+        }
+    }
+    else if(num==3){
+        slidechange(0);
+        num =0;
+    }
+})
+
+button1.addEventListener("click",function(){
+    if(num>0){
+        num--;
+        slidechange(num);
+    }
+    else if(num==0){
+        slidechange(3);
+        num =3;
+    }
+})
+
+rebutton1.addEventListener("click", function(){
+    slidechange(0);
+    redright(rebutton1);
+    whiteright(redbutton2);
+    whiteright(redbutton3);
+    whiteright(redbutton4);
+})
+
+rebutton2.addEventListener("click", function(){
+    slidechange(1);
+    redright(rebutton2);
+    whiteright(redbutton1);
+    whiteright(redbutton3);
+    whiteright(redbutton4);
+})
+
+rebutton3.addEventListener("click", function(){
+    slidechange(2);
+    redright(rebutton3);
+    whiteright(redbutton1);
+    whiteright(redbutton2);
+    whiteright(redbutton4);
+})
+
+rebutton4.addEventListener("click", function(){
+    slidechange(3);
+    redright(rebutton4);
+    whiteright(redbutton1);
+    whiteright(redbutton2);
+    whiteright(redbutton3);
+})
+
+
 a718.addEventListener("mouseover", function(){
     info1.style.display = "block";
     info1.style.top = "0";
@@ -202,5 +293,15 @@ shopmd.addEventListener("mouseover", function(){
 shopmd.addEventListener("mouseout", function(){
     shopmd.style.display = "none";
 
+});
+
+main1.addEventListener("mouseover", function(){
+    button1.style.display = "block";
+    button2.style.display = "block";
+});
+
+main1.addEventListener("mouseout", function(){
+    button1.style.display = "none";
+    button2.style.display = "none";
 });
 
