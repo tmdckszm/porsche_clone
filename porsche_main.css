@@ -397,14 +397,12 @@ header{
 
 #main_1{
     height: 625px;
-    border: 1px solid red;
     position: relative;
     overflow: hidden;
 }
 
 #main_2{
     height: 985px;
-    border: 1px solid blue;
 }
 
 #main_3{
@@ -436,7 +434,7 @@ header{
     width: 6706px;
     margin: 0 0 0 -40px;
     position: absolute;
-    transition: all 0.35s;
+    transition: all 0.85s;
 }
 
 #main_1>ul>li{
@@ -673,3 +671,153 @@ header{
     display: inline-block;
     border-radius: 100%;
 }
+
+#model_text{
+    height: 100px;
+}
+
+#model_text>span{
+    font-size: 44px;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+    margin-left: 122px;
+    display: inline-block;
+    margin: 25px 0 0 122px;
+    font-weight: 700;
+}
+
+#model_line1{
+    width: 1724px;
+    padding:0 0 0 0;
+}
+
+#model_line1>li{
+    display: inline-block;
+    position: relative;
+}
+
+#model_line1>li>img{
+    margin: 0 0 0 -4px;
+}
+
+#model_line2{
+    width: 1724px;
+    padding: 0px 0px 0 0;
+    margin: -19px 0 0 0;
+}
+
+#model_line2>li{
+    display: inline-block;
+    position: relative;
+}
+
+#model_line2>li>img{
+    margin: 0 0 0 -4px;
+}
+
+.small_text{
+    position: absolute;
+    top: 5%;
+    left: 7%;
+}
+
+.small_name{
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+}
+
+.small_price{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+    display: block;
+}
+
+.small_save{
+    position: absolute;
+    top: 80%;
+    left: 7%;
+}
+
+.small_save_1{
+    background-color: #ffffff;
+    width: 195px;
+    height: 50px;
+    display: inline-block;
+    margin: 0px 8px 0 0px;
+}
+
+.small_save_2{
+    border: 1px solid white;
+    width: 122px;
+    height: 48px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.small_save_1>p::before{
+    content: "\f14d";
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    font-weight: 900;
+    color: black;
+    margin: 0px 3px 0px 20px;
+}
+
+.small_save_1>p{
+    display: inline-block;
+}
+
+.small_save_1>span{
+    font-size: 16px;
+    color: black;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.small_save_2>p::before{
+    content: "\f054";
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    font-weight: 900;
+    color: white;
+    margin: 0px 3px 0px 23px;
+}
+
+.small_save_2>p{
+    display: inline-block;
+}
+
+.small_save_2>span{
+    font-size: 16px;
+    color: white;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.small_save_1:hover{
+    background-color: #d5001c;
+}
+
+.small_save_1:hover span{
+    color: white;
+}
+
+.small_save_1:hover p:before{
+    color: white;
+}
+
+.small_save_2:hover{
+    border: 1px solid #d5001c;
+}
+
+.small_save_2:hover span{
+    color: #d5001c
+}
+
+.small_save_2:hover p:before{
+    color: #d5001c;
+}
+
