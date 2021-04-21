@@ -26,8 +26,8 @@ var rebutton3 =document.querySelector("#redbutton3");
 var rebutton4 =document.querySelector("#redbutton4");
 var num = 0;
 
-function slidechange(num){
-    slide1.style.left = num * -1675+'px';
+function slidechange(a){
+    slide1.style.left = a * -1675+'px';
 }
 
 function redright(r){
@@ -38,41 +38,90 @@ function whiteright(w){
 }
 
 button2.addEventListener("click",function(){
-    if(num<3){
-        num++;
-        console.log(num);
-        slidechange(num);
-        if(num ==1)
-        {
-            redright(redbutton2);
+    num++;
+    if(num<4){
+        if(num==0){
+            slidechange(num);
+            redright(rebutton1);
+            whiteright(redbutton2);
+            whiteright(redbutton3);
+            whiteright(redbutton4);
+        }
+        else if(num==1){
+            slidechange(num);
+            redright(rebutton2);
             whiteright(redbutton1);
             whiteright(redbutton3);
             whiteright(redbutton4);
         }
-        if(num ==2)
-        {
-            redright(redbutton3);
+        else if(num==2){
+            slidechange(num);
+            redright(rebutton3);
             whiteright(redbutton1);
             whiteright(redbutton2);
             whiteright(redbutton4);
         }
+        else if(num==3){
+            slidechange(num);
+            redright(rebutton4);
+            whiteright(redbutton1);
+            whiteright(redbutton2);
+            whiteright(redbutton3);
+        }
     }
-    else if(num==3){
+    else if(num==4){
         slidechange(0);
+        redright(rebutton1);
+        whiteright(redbutton2);
+        whiteright(redbutton3);
+        whiteright(redbutton4);
         num =0;
     }
-})
+    console.log(num);
+});
 
 button1.addEventListener("click",function(){
-    if(num>0){
-        num--;
-        slidechange(num);
+    num--;
+    if(num>=0){
+        if(num==0){
+            slidechange(num);
+            redright(rebutton1);
+            whiteright(redbutton2);
+            whiteright(redbutton3);
+            whiteright(redbutton4);
+        }
+        else if(num==1){
+            slidechange(num);
+            redright(rebutton2);
+            whiteright(redbutton1);
+            whiteright(redbutton3);
+            whiteright(redbutton4);
+        }
+        else if(num==2){
+            slidechange(num);
+            redright(rebutton3);
+            whiteright(redbutton1);
+            whiteright(redbutton2);
+            whiteright(redbutton4);
+        }
+        else if(num==3){
+            slidechange(num);
+            redright(rebutton4);
+            whiteright(redbutton1);
+            whiteright(redbutton2);
+            whiteright(redbutton3);
+        }
     }
-    else if(num==0){
+    else{
         slidechange(3);
+        redright(rebutton4);
+        whiteright(redbutton1);
+        whiteright(redbutton2);
+        whiteright(redbutton3);
         num =3;
     }
-})
+    console.log(num);
+});
 
 rebutton1.addEventListener("click", function(){
     slidechange(0);
@@ -80,7 +129,7 @@ rebutton1.addEventListener("click", function(){
     whiteright(redbutton2);
     whiteright(redbutton3);
     whiteright(redbutton4);
-})
+});
 
 rebutton2.addEventListener("click", function(){
     slidechange(1);
@@ -88,7 +137,7 @@ rebutton2.addEventListener("click", function(){
     whiteright(redbutton1);
     whiteright(redbutton3);
     whiteright(redbutton4);
-})
+});
 
 rebutton3.addEventListener("click", function(){
     slidechange(2);
