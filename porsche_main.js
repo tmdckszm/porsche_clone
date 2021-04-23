@@ -20,11 +20,24 @@ var main1 = document.querySelector("#main_1");
 var button1 = document.querySelector("#button_1");
 var button2 = document.querySelector("#button_2");
 var slide1 = document.querySelector("#slide");
-var rebutton1 =document.querySelector("#redbutton1");
-var rebutton2 =document.querySelector("#redbutton2");
-var rebutton3 =document.querySelector("#redbutton3");
-var rebutton4 =document.querySelector("#redbutton4");
+var redbutton1 =document.querySelector("#redbutton1");
+var redbutton2 =document.querySelector("#redbutton2");
+var redbutton3 =document.querySelector("#redbutton3");
+var redbutton4 =document.querySelector("#redbutton4");
 var num = 0;
+var num2 = 0;
+
+var normalSlide= document.querySelector(".normal_slide");
+var normalButton1= document.querySelector("#normal_button1");
+var normalButton2= document.querySelector("#normal_button2");
+var redButton5 = document.querySelector("#redbutton5");
+var redButton6 = document.querySelector("#redbutton6");
+var redButton7 = document.querySelector("#redbutton7");
+var redButton8 = document.querySelector("#redbutton8");
+
+function normalsleft(b){
+    normalSlide.style.left = b * -520+'px';
+}
 
 function slidechange(a){
     slide1.style.left = a * -1675+'px';
@@ -37,33 +50,37 @@ function whiteright(w){
     w.style.backgroundColor = "white";
 }
 
+function grayright(g){
+    g.style.backgroundColor ="gray";
+}
+
 button2.addEventListener("click",function(){
     num++;
     if(num<4){
         if(num==0){
             slidechange(num);
-            redright(rebutton1);
+            redright(redbutton1);
             whiteright(redbutton2);
             whiteright(redbutton3);
             whiteright(redbutton4);
         }
         else if(num==1){
             slidechange(num);
-            redright(rebutton2);
+            redright(redbutton2);
             whiteright(redbutton1);
             whiteright(redbutton3);
             whiteright(redbutton4);
         }
         else if(num==2){
             slidechange(num);
-            redright(rebutton3);
+            redright(redbutton3);
             whiteright(redbutton1);
             whiteright(redbutton2);
             whiteright(redbutton4);
         }
         else if(num==3){
             slidechange(num);
-            redright(rebutton4);
+            redright(redbutton4);
             whiteright(redbutton1);
             whiteright(redbutton2);
             whiteright(redbutton3);
@@ -71,7 +88,7 @@ button2.addEventListener("click",function(){
     }
     else if(num==4){
         slidechange(0);
-        redright(rebutton1);
+        redright(redbutton1);
         whiteright(redbutton2);
         whiteright(redbutton3);
         whiteright(redbutton4);
@@ -85,28 +102,28 @@ button1.addEventListener("click",function(){
     if(num>=0){
         if(num==0){
             slidechange(num);
-            redright(rebutton1);
+            redright(redbutton1);
             whiteright(redbutton2);
             whiteright(redbutton3);
             whiteright(redbutton4);
         }
         else if(num==1){
             slidechange(num);
-            redright(rebutton2);
+            redright(redbutton2);
             whiteright(redbutton1);
             whiteright(redbutton3);
             whiteright(redbutton4);
         }
         else if(num==2){
             slidechange(num);
-            redright(rebutton3);
+            redright(redbutton3);
             whiteright(redbutton1);
             whiteright(redbutton2);
             whiteright(redbutton4);
         }
         else if(num==3){
             slidechange(num);
-            redright(rebutton4);
+            redright(redbutton4);
             whiteright(redbutton1);
             whiteright(redbutton2);
             whiteright(redbutton3);
@@ -114,7 +131,7 @@ button1.addEventListener("click",function(){
     }
     else{
         slidechange(3);
-        redright(rebutton4);
+        redright(redbutton4);
         whiteright(redbutton1);
         whiteright(redbutton2);
         whiteright(redbutton3);
@@ -123,33 +140,33 @@ button1.addEventListener("click",function(){
     console.log(num);
 });
 
-rebutton1.addEventListener("click", function(){
+redbutton1.addEventListener("click", function(){
     slidechange(0);
-    redright(rebutton1);
+    redright(redbutton1);
     whiteright(redbutton2);
     whiteright(redbutton3);
     whiteright(redbutton4);
 });
 
-rebutton2.addEventListener("click", function(){
+redbutton2.addEventListener("click", function(){
     slidechange(1);
-    redright(rebutton2);
+    redright(redbutton2);
     whiteright(redbutton1);
     whiteright(redbutton3);
     whiteright(redbutton4);
 });
 
-rebutton3.addEventListener("click", function(){
+redbutton3.addEventListener("click", function(){
     slidechange(2);
-    redright(rebutton3);
+    redright(redbutton3);
     whiteright(redbutton1);
     whiteright(redbutton2);
     whiteright(redbutton4);
 })
 
-rebutton4.addEventListener("click", function(){
+redbutton4.addEventListener("click", function(){
     slidechange(3);
-    redright(rebutton4);
+    redright(redbutton4);
     whiteright(redbutton1);
     whiteright(redbutton2);
     whiteright(redbutton3);
@@ -354,3 +371,81 @@ main1.addEventListener("mouseout", function(){
     button2.style.display = "none";
 });
 
+
+normalButton2.addEventListener("click", function(){
+    num2++;
+    if(num2<4){
+        if(num2==0){
+            normalsleft(num2);
+            redright(redButton5);
+            grayright(redButton6);
+            grayright(redButton7);
+            grayright(redButton8);
+        }
+        else if(num2==1){
+            normalsleft(num2);
+            redright(redButton6);
+            grayright(redButton5);
+            grayright(redButton7);
+            grayright(redButton8);
+
+        }
+        else if(num2==2){
+            normalsleft(num2);
+            redright(redButton7);
+            grayright(redButton5);
+            grayright(redButton6);
+            grayright(redButton8);
+
+        }
+        else if(num2==3){
+            normalsleft(num2);
+            redright(redButton8);
+            grayright(redButton5);
+            grayright(redButton6);
+            grayright(redButton7);
+
+        }
+    }
+})
+
+normalButton1.addEventListener("click",function(){
+    num2--;
+    if(num2>=0){
+        if(num2==0){
+            normalsleft(num2);
+            redright(redButton5);
+            grayright(redButton6);
+            grayright(redButton7);
+            grayright(redButton8);
+
+        }
+        else if(num2==1){
+            normalsleft(num2);
+            redright(redButton6);
+            grayright(redButton5);
+            grayright(redButton7);
+            grayright(redButton8);
+
+        }
+        else if(num2==2){
+            normalsleft(num2);
+            redright(redButton7);
+            grayright(redButton5);
+            grayright(redButton6);
+            grayright(redButton8);
+
+        }
+        else if(num2==3){
+            normalsleft(num2);
+            redright(redButton8);
+            grayright(redButton5);
+            grayright(redButton6);
+            grayright(redButton7);
+        }
+    }
+    else{
+       
+    }
+   
+});
