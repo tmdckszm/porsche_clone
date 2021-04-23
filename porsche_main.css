@@ -407,8 +407,9 @@ header{
 
 #main_3{
     height: 523px;
-    border: 1px solid orange;
     position: relative;
+    overflow: hidden;
+    
 }
 
 #main_4{
@@ -834,17 +835,24 @@ header{
 }
 
 .normal_slide{
-    width: 3500px;
-    margin: 10px 0 0 80px;
+    width: 3200px;
+    margin: 10px 0 0 0px;
     position: absolute;
+    margin: 7px 0 0 -7px;
+    transition: all 0.35s;
 }
 
 .normal_num{
     display: inline-block;
     width: 473px;
     height: 342px;
-    margin: 0 0 0 23px;
+    margin: 0 0 0 45px;
     position: relative;
+    transition: all 0.35s;
+}
+
+.normal_num:hover .normal_info{
+    background-color: #d5001c;
 }
 
 .normal_num>a>img{
@@ -883,6 +891,7 @@ header{
     top: 58%;
     left: 3px;
     box-shadow: 0px 0px 2px #000 ;
+    
 }
 
 #normal_button2{
@@ -893,6 +902,22 @@ header{
     top: 58%;
     right: 3px;
     box-shadow: 0px 0px 2px #000 ;
+}
+
+#normal_button1:hover{
+    background-color: #d5001c;
+}
+
+#normal_button2:hover{
+    background-color: #d5001c;
+}
+
+#normal_button1:hover p:before{
+    color: white;
+}
+
+#normal_button2:hover p:before{
+    color: white;
 }
 
 #normal_button1>p{
@@ -964,4 +989,46 @@ header{
     height: 8px;
     display: inline-block;
     border-radius: 100%;
+}
+
+#small_title{
+    height: 110px;
+}
+
+#small_title>span{
+    font-size: 44px;
+    margin: 45px 0 0 120px;
+    display: inline-block;
+    font-weight: 700;
+}
+
+.small_img{
+    width: 430px;
+    height: 600px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+#small_margin{
+    margin: 0 0 0 132px;
+}
+
+.small_img>li{
+    display: inline-block;
+    text-decoration: none;
+}
+#action_img1>img{    
+    width: 460px;
+    height: 344px;
+}
+
+#action_img2>img{    
+    width: 220px;
+    height: 198px;
+    
+}
+
+#action_img3>img{    
+    width: 220px;
+    height: 198px;
 }
