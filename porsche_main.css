@@ -415,6 +415,7 @@ header{
 #main_4{
     height: 776px;
     border: 1px solid yellow;
+    position: relative;
 }
 
 #main_5{
@@ -1005,30 +1006,249 @@ header{
 .small_img{
     width: 430px;
     height: 600px;
-    border: 1px solid #000;
     display: inline-block;
+    position: absolute;
+    z-index: 2;
 }
 
-#small_margin{
-    margin: 0 0 0 132px;
+.instagram{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    bottom: 0;
+    transition: all 0.35s;
+}
+
+.instagram>i{
+    font-size: 23px;
+    color: white;
+}
+
+.small_detail{
+    position: absolute;
+    width: 150px;
+    height: 30px;
+    bottom: -100px;
+    left: 10px;
+    transition: all 0.35s;
+}
+
+
+.small_detail2{
+    position: absolute;
+    width: 150px;
+    height: 55px;
+    bottom: 50px;
+    left: 10px;
+    bottom: -100px;
+    transition: all 0.35s;
+}
+
+.small_detail>span{
+    margin: 0px 0 0 8px;
+    vertical-align: super;
+    color: black;
+    font-weight: 100;
+}
+
+.small_detail2>span{
+    margin: 0px 0 0 0px;
+    color: black;
+    font-weight: 100;
+    display: block;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.small_detail>img{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.small_detail2>img{
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+}
+
+.hover_img:hover{
+   opacity: 0.8;
+   z-index: 1;
+}
+
+.hover_img{
+    transition: all 0.35s;
+}
+
+#small_margin1{
+    left: 7.3%;
+}
+
+#small_margin2{
+    left: 35.7%;
+}
+
+#small_margin3{
+    left: 64.1%;
 }
 
 .small_img>li{
     display: inline-block;
     text-decoration: none;
-}
-#action_img1>img{    
-    width: 460px;
-    height: 344px;
+    position: relative;
+    overflow: hidden;
 }
 
-#action_img2>img{    
-    width: 220px;
+#action_img1{
+    width: 470px;
+    height: 399px;
+    margin: 0 0 0 -40px;
+    transition: all 0.35s;
+}
+
+#action_img1_footer{
+    width: 470px;
+    position: absolute;
+    height: 46px;
+    background-color: #d5001c;
+    bottom: 0;
+    text-align: center;
+    bottom: -100px;
+}
+
+.small_img>li:hover #action_img1_footer{
+    bottom: 0;
+    z-index: 2;
+}
+
+#action_img1_footer>p{
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 200;
+    margin: 13px 25px 0 0px;
+}
+
+#action_img1_footer>p::after{
+    content: "\f360";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 17px;
+    color: #ffffff;
+    margin: 0 0 0 5px;
+}
+
+#action_img2{
+    width: 233px;
+    height: 198px;
+    margin: 0px 0 0 -40px;
+}
+
+
+#action_img3{
+    width: 233px;
+    height: 198px;
+}
+
+#action_img1>a>img{    
+    width: 470px;
+    height: 399px;
+    position: absolute;
+}
+
+#action_img2>a>img{    
+    width: 233px;
+    height: 198px;
+    position: absolute;
+}
+
+#action_img3>a>img{    
+    width: 233px;
+    height: 198px;
+    position: absolute;
+}
+
+#action_img4{
+    width: 233px;
+    height: 198px;
+    margin: 0 0 0 -40px;
+}
+
+#action_img5{
+    width: 233px;
     height: 198px;
     
 }
 
-#action_img3>img{    
-    width: 220px;
+#action_img6{
+    width: 470px;
+    height: 399px;
+    margin: 0 0 0 -40px;
+}
+
+#action_img4>a>img{    
+    width: 233px;
+    height: 198px;
+    position: absolute;
+}
+
+#action_img5>a>img{    
+    width: 233px;
+    height: 198px;
+    position: absolute;
+}
+
+#action_img6>a>img{    
+    width: 470px;
+    height: 399px;
+    position: absolute;
+}
+
+#action_img7{
+    width: 470px;
+    height: 399px;
+    margin: 0 0 0 -40px;
+}
+
+#action_img8{
+    width: 233px;
+    height: 198px;
+    margin: 0px 0 0 -40px;
+}
+
+#action_img9{
+    width: 233px;
     height: 198px;
 }
+
+#action_img7>a>img{    
+    width: 470px;
+    height: 399px;
+    position: absolute;
+}
+
+#action_img8>a>img{    
+    width: 233px;
+    height: 198px;
+    position: absolute;
+}
+
+#action_img9>a>img{    
+    width: 233px;
+    height: 198px;
+    position: absolute;
+}
+
+.hover_img:hover .small_detail{
+    bottom: 50px;
+}
+
+.hover_img:hover .small_detail2{
+    bottom: 25px;
+}
+
+.hover_img:hover #instagram2{
+    bottom: 40px;
+}
+
