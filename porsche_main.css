@@ -414,18 +414,15 @@ header{
 
 #main_4{
     height: 776px;
-    border: 1px solid yellow;
     position: relative;
 }
 
 #main_5{
     height: 470px;
-    border: 1px solid green;
 }
 
 #main_6{
     height: 482px;
-    border: 1px solid purple;
 }
 
 #main_7{
@@ -1032,6 +1029,7 @@ header{
     bottom: -100px;
     left: 10px;
     transition: all 0.35s;
+    z-index: 3;
 }
 
 
@@ -1073,14 +1071,6 @@ header{
     border-radius: 100%;
 }
 
-.hover_img:hover{
-   opacity: 0.8;
-   z-index: 1;
-}
-
-.hover_img{
-    transition: all 0.35s;
-}
 
 #small_margin1{
     left: 7.3%;
@@ -1120,7 +1110,6 @@ header{
 
 .small_img>li:hover #action_img1_footer{
     bottom: 0;
-    z-index: 2;
 }
 
 #action_img1_footer>p{
@@ -1252,3 +1241,132 @@ header{
     bottom: 40px;
 }
 
+.hover_img>a>img:hover{
+   opacity: 0.3;
+}
+
+.second_normal{
+    margin: 0 0 0 80px;
+}
+
+.second_normal>li{
+    display: inline-block;
+    margin: 0 0 0 -4px;
+    position: relative;
+}
+
+#second_normal1{
+    width: 568px;
+    height: 324px;
+}
+
+.second_normal2{
+    width: 288px;
+    height: 324px;
+}
+
+.second_normal_hover{
+    position: absolute;
+    bottom: 0;
+    left: 11px;
+}
+
+.second_normal_hover>p{
+    color: white;
+    font-size: 20px;
+}
+
+.second_normal_hover>p::before{
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    color: #d5001c;
+    margin: 0px 5px 0 0px;
+}
+
+.second_normal>li:hover .second_normal_hover>p{
+    color: #d5001c;
+}
+
+#discover{
+    margin: 0 0 0 80px;
+}
+
+#discover>li{
+    display: inline-block;
+    margin: 0px 0 -3px -4px;;
+    height: 269px;
+}
+
+#discover>li:hover{
+    border-bottom: 3px solid #d5001c;
+}
+
+#discover>li:hover .discover_info>p{
+    color: #d5001c;
+}
+
+.discover_info{
+    width: 360px;
+    height: 70px;
+    display: inline-block;
+}
+
+#discover_info1{
+    margin: 0 0 0 116px;
+}
+
+#discover_info2{
+    margin: 0 0 0 -4px;
+}
+
+#discover_info3{
+    margin: 0 0 0 -4px;
+}
+
+#discover_info4{
+    margin: 0 0 0 -4px;
+}
+
+#discover_info1>p::before{
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    color: #d5001c;
+    margin: 0px 5px 0 0px;
+}
+
+#discover_info2>p::before{
+    content: "\f14d";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 15px;
+    color: #d5001c;
+    margin: 0px 5px 0 0px;
+}
+
+#discover_info3>p::before{
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    color: #d5001c;
+    margin: 0px 5px 0 0px;
+}
+
+#discover_info4>p::before{
+    content: "\f054";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    color: #d5001c;
+    margin: 0px 5px 0 0px;
+}
+
+#main_7>div{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+}
