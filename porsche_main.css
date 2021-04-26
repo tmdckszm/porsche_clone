@@ -426,8 +426,9 @@ header{
 }
 
 #main_7{
-    height: 482px;
-    border: 1px solid pink;
+    width: 1685px;
+    height: 552px;
+    
 }
 
 #main_1>ul{
@@ -1365,8 +1366,243 @@ header{
     margin: 0px 5px 0 0px;
 }
 
-#main_7>div{
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 700;
+#main_7_second{
+    width: 1440px;
+    height: 482px;
+    border-top: 1px solid #c8cacb;
+    margin: 40px 0 0 117px;
+    position: relative;
 }
+
+#main_7_title1{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+    margin: 25px 200px 0 0px;
+}
+
+#main_7_title2{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+    margin: 25px 200px 0 0px;
+}
+
+#main_7_title3{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+    margin: 25px 200px 0 0px;
+}
+
+#main_7_title4{
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+    margin: 25px 200px 0 0px;
+}
+
+#main_7_second>ul{
+    display: inline-block;
+    position: absolute;
+}
+
+.main_7_second_text{
+    list-style: none;
+    font-size: 18px;
+    margin: 30px 0 0 0;
+    font-family: "Porsche Next", "Arial Narrow", Arial, sans-serif;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_7_second_text:hover{
+    color: #d5001c;
+    cursor: pointer;
+}
+
+#main_third_1{
+    left: -39px;
+    top: 45px;
+}
+
+#main_third_2{
+    left: 270px;
+    top: 40px;
+}
+
+#main_third_3{
+    left: 592px;
+    top: 40px;
+}
+
+#main_third_4{
+    left: 958px;
+    top: 40px;
+}
+
+#page{
+    width: 324px;
+    height: 50px;
+    background-color: #313639;
+    position: absolute;
+    right: 120px;
+    bottom: 16%;
+}
+
+#page:hover{
+    background-color: #d5001c;
+}
+
+#page>a{
+    text-decoration: none;
+}
+
+#page>a>p{
+    color: white;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 17px 0 0 12px;
+}
+
+#page>a>p::before{
+    content: "\f1e0";
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    color: white;
+    margin: 0px 12px 0 0px;
+}
+
+#page2{
+    width: 350px;
+    height: 56px;
+    position: absolute;
+    right: 93px;
+    bottom: -32px;
+}
+
+#page2>li{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #313639;
+    margin: 0 5px 0 0;
+}
+
+#page_icon1>a>i{
+    color: white;
+    font-size: 30px;
+    margin: 10px 0px 0 10px;
+}
+
+#page_icon2>a>i{
+    color: white;
+    font-size: 30px;
+    margin: 10px 0px 0 10px;
+}
+
+#page_icon3>a>i{
+    color: white;
+    font-size: 30px;
+    margin: 10px 0px 0 15px;
+}
+
+#page_icon4>a>i{
+    color: white;
+    font-size: 30px;
+    margin: 10px 0px 0 10px;
+}
+
+#page_icon5>a>i{
+    color: white;
+    font-size: 30px;
+    margin: 10px 0px 0 10px;
+}
+
+#page_icon6>a>i{
+    color: white;
+    font-size: 30px;
+    margin: 10px 0px 0 13px;
+}
+
+#page_icon1:hover{
+    background-color: #55acee;
+}
+
+#page_icon2:hover{
+    background-color: #FE2E2E;
+}
+
+#page_icon3:hover{
+    background-color: #2E64FE;
+}
+
+#page_icon4:hover{
+    background-color: #58ACFA;
+}
+
+#page_icon5:hover{
+    background-color: #58D3F7;
+}
+
+#page_icon6:hover{
+    background-color: #d5001c;
+}
+
+#page_hidden{
+    position: absolute;
+    width: 322px;
+    height: 97px;
+    background-color: white;
+    right: 120px;
+    bottom: -21px;
+    border-right: 1px solid #c8cacb;
+    border-left: 1px solid #c8cacb;
+    border-bottom: 1px solid #c8cacb;
+    z-index: 1;
+    display: none;
+}
+
+#page_hidden>ul{
+    margin: 20px 0px 0 -27px;
+}
+
+#page_hidden>ul>li{
+    display: inline-block;
+    list-style: none;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px 0 0;
+}
+
+#page_hidden>ul>li>a>i{
+    color: white;
+    font-size: 30px;
+    margin: 10px 0 0 13px;
+}
+
+#page_hidden1{
+    background-color: #2753a7; 
+}
+
+#page_hidden2{
+    background-color: #55acee;
+}
+
+#page_hidden3{
+    background-color: #000;
+}
+
+#page_hidden4{
+    background-color: #0274b3;
+}
+
+#page_hidden5{
+    background-color: #cd242b;
+}
+
