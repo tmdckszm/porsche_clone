@@ -35,6 +35,9 @@ var redButton6 = document.querySelector("#redbutton6");
 var redButton7 = document.querySelector("#redbutton7");
 var redButton8 = document.querySelector("#redbutton8");
 
+var page = document.querySelector("#page");
+var pageHidden = document.querySelector("#page_hidden")
+
 function normalsleft(b){
     normalSlide.style.left = b * -520+'px';
 }
@@ -444,8 +447,13 @@ normalButton1.addEventListener("click",function(){
             grayright(redButton7);
         }
     }
-    else{
-       
-    }
    
+});
+
+page.addEventListener("mouseover", function(){
+    pageHidden.style.display = "block"
+});
+
+page.addEventListener("mouseout", function(){
+    pageHidden.style.display = "none"
 });
